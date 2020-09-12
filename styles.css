@@ -25,6 +25,10 @@ body {
   border: 10px solid black;
   border-radius: 20%;
 }
+.start-button{
+  padding: 40px 40px;
+  font-size: 2rem;
+}
 
 .game-over {
   background-color: red;
