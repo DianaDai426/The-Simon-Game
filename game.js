@@ -50,7 +50,7 @@ function nextSequence() {
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
   console.log("game=" + gamePattern);
-  $("#" + randomChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+  setTimeout(function() {$("#" + randomChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);}, 200);
   playSound(randomChosenColour);
   level++;
   $("h1").text("Level " + level);
