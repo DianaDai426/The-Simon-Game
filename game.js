@@ -31,7 +31,7 @@ $(".btn").on("click", function() {
 });
 
 // Press Any Key to Start
-$(document).on("keypress", function() {
+$(".start-button").on("click", function() {
   if (!started) {
     started = true;
     nextSequence();
